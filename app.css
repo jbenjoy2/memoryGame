@@ -1,0 +1,25 @@
+#game div {
+	border: 1px solid red;
+	width: 15%;
+	height: 200px;
+	margin: 10px;
+	display: inline-block;
+	align-items: center;
+}
+
+body {
+	background-color: black;
+}
+
+h1 {
+	color: blue;
+	text-align: center;
+	font-family: 'Audiowide';
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-color: blueviolet;
+}
+
+div div:hover {
+	cursor: pointer;
+}
