@@ -106,7 +106,7 @@ function handleCardClick(event) {
 	if (cardsFlipped === COLORS.length) {
 		win.play();
 		setTimeout(function() {
-			if (!alert('Alert For your User!')) {
+			if (!alert('YOU WIN!!')) {
 				window.location.reload();
 			}
 		}, 400);
