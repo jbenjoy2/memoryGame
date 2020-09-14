@@ -6,7 +6,34 @@ let noClicking = false;
 let correct = document.getElementById('correct');
 let incorrect = document.getElementById('incorrect');
 let win = document.getElementById('win');
-const COLORS = [ 'red', 'blue', 'green', 'orange', 'purple', 'red', 'blue', 'green', 'orange', 'purple' ];
+const mute = document.querySelector('.mute');
+const button = document.querySelector('button');
+const COLORS = [
+	'red',
+	'blue',
+	'green',
+	'orange',
+	'purple',
+	'red',
+	'blue',
+	'green',
+	'orange',
+	'purple'
+];
+
+button.addEventListener('click', function() {
+	if (!button.classList.contains('muted')) {
+		correct.muted = true;
+		incorrect.muted = true;
+		win.muted = true;
+		button.classList += 'muted';
+	} else {
+		correct.muted = false;
+		incorrect.muted = false;
+		win.muted = false;
+		button.classList.remove('muted');
+	}
+});
 
 // here is a helper function to shuffle an array
 // it returns the same array with values shuffled
